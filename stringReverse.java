@@ -10,7 +10,7 @@ String str = input.nextLine();
 String reversed="";
 System.out.println("THE REVERSED STRING IS: " +reverseString(str,"",0,str.length()-1) );
 }
-public static String reverseString(String str, String reversed, int startIndex, int endIndex)
+public static String reverseString(String str , String reversed, int startIndex, int endIndex)
 {
     if(startIndex>endIndex)
 {
@@ -18,5 +18,5 @@ public static String reverseString(String str, String reversed, int startIndex, 
 }
     reversed +=str.charAt(endIndex);
     return reverseString(str , reversed , startIndex , endIndex-1);
-} }
+} 
 
